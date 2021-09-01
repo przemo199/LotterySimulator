@@ -1,8 +1,8 @@
-package lotterycontroller;
+package main.java.lotterycontroller;
 
-import iocontroller.IOController;
-import lotteryview.LotteryView;
-import randomset.RandomSet;
+import main.java.iocontroller.IOController;
+import main.java.lotteryview.LotteryView;
+import main.java.randomset.RandomSet;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;

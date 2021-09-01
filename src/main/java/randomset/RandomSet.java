@@ -1,4 +1,4 @@
-package randomset;
+package main.java.randomset;
 
 import java.util.Arrays;
 import java.util.Random;

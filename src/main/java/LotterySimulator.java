@@ -1,6 +1,8 @@
-import iocontroller.IOController;
-import lotterycontroller.LotteryController;
-import lotteryview.LotteryView;
+package main.java;
+
+import main.java.iocontroller.IOController;
+import main.java.lotterycontroller.LotteryController;
+import main.java.lotteryview.LotteryView;
 
 public class LotterySimulator {
 

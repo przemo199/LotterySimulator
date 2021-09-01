@@ -1,7 +1,6 @@
-package lotteryview;
+package main.java.lotteryview;
 
 import javax.swing.table.AbstractTableModel;
-import javax.swing.table.DefaultTableModel;
 
 public class ProbabilityTableModel extends AbstractTableModel {
     private int poolSize;

@@ -1,28 +1,27 @@
-package lotteryview;
+package main.java.lotteryview;
 
 import javax.swing.*;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class LotteryView extends JFrame {
-    final private JLabel filePathLabel = new JLabel("Select file path:");
-    final private JTextField filePathTextField = new JTextField(20);
-    final private JButton filePathButton = new JButton("...");
+    private final JLabel filePathLabel = new JLabel("Select file path:");
+    private final JTextField filePathTextField = new JTextField(20);
+    private final JButton filePathButton = new JButton("...");
 
-    final private JLabel setSizeLabel = new JLabel("Bet size:");
-    final private JTextField setSizeTextField = new JTextField("6", 3);
+    private final JLabel setSizeLabel = new JLabel("Bet size:");
+    private final JTextField setSizeTextField = new JTextField("6", 3);
 
-    final private JLabel poolSizeLabel = new JLabel("Pool size:");
-    final private JTextField poolSizeTextField = new JTextField("49", 3);
+    private final JLabel poolSizeLabel = new JLabel("Pool size:");
+    private final JTextField poolSizeTextField = new JTextField("49", 3);
 
-    final private JLabel setNumberLabel = new JLabel("Number of bets:");
-    final private JTextField setNumberTextField = new JTextField("10000000", 6);
+    private final JLabel setNumberLabel = new JLabel("Number of bets:");
+    private final JTextField setNumberTextField = new JTextField("10000000", 6);
 
-    final private JProgressBar progressBar = new JProgressBar();
-    final private JButton buttonGenerate = new JButton("Generate");
+    private final JProgressBar progressBar = new JProgressBar();
+    private final JButton buttonGenerate = new JButton("Generate");
 
     private ProbabilityTableModel tableModel = new ProbabilityTableModel(49);
     private JTable table = new JTable(tableModel);
@@ -39,8 +38,7 @@ public class LotteryView extends JFrame {
         //this.setBounds(200, 100, 600, 400);
         this.setTitle("Lottery Simulator");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        ImageIcon img = new ImageIcon("icon.png");
+        ImageIcon img = new ImageIcon(getClass().getResource("/images/icon.png"));
         this.setIconImage(img.getImage());
 
         JPanel basePane = new JPanel();
@@ -78,7 +76,7 @@ public class LotteryView extends JFrame {
 
         JPanel simulatorPane = new JPanel();
         simulatorPane.setLayout(new GridBagLayout());
-        String betSizeToolTipText = "Must be integer greater than 0 and smaller than pool size";
+        String betSizeToolTipText = "Must be an integer greater than 0 and smaller than the pool size";
 
         gbc.gridx = 0;
         gbc.gridy = 0;

@@ -1,4 +1,4 @@
-package iocontroller.setio;
+package main.java.iocontroller.setio;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

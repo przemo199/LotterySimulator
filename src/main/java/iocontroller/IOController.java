@@ -1,6 +1,6 @@
-package iocontroller;
+package main.java.iocontroller;
 
-import iocontroller.setio.SetWriter;
+import main.java.iocontroller.setio.SetWriter;
 
 public class IOController {
     String filePath;

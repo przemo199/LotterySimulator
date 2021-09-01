@@ -1,4 +1,4 @@
-package iocontroller.setio;
+package main.java.iocontroller.setio;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
